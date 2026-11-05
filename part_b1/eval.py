@@ -20,7 +20,7 @@ def evaluate(reference, prediction):
 def evaluate_per_type(reference, prediction):
     types = {t for _ , t in reference | prediction}
     results = {}
-    for t in types:
+    for t in sorted(types):
         ref_t = {entity for entity in reference if entity[1]==t}
         pred_t = {entity for entity in prediction if entity[1]==t}
         results[t] = evaluate(ref_t, pred_t)
