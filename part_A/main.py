@@ -4,7 +4,7 @@ import pandas as pd
 
 from parse import ArticleProcessor
 
-INPUT_JSON_PATH = "input.json"
+INPUT_JSON_PATH = "part_A/input.json"
 
 
 def main():
